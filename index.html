@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link rel="stylesheet" href="Magnific-Popup-master/dist/magnific-popup.css">
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 28px;
+            font-weight: 300;
+        }
+
+        /*All Section Styles*/
+
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .p-section {
+            background-attachment: fixed !important;
+            background-size: cover !important;
+        }
+
+        .section-title {
+            border: 2px solid #909;
+            position: relative;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+            border: 2px solid rgb(144, 146, 162);
+            background-color: white;
+        }
+
+        .section-title hr {
+            color: #9092a2;
+            height: 2px;
+            background-color: #9092a2;
+            width: 100px;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-title.op hr {
+            background-color: #ffffff;
+        }
+
+        #contactus .section-title,
+        #videos .section-title {
+            border-color: #ffffff;
+            background-color: rgb(7 126 138 / 45%);
+            color: white;
+        }
+
+        #contactus .section-sub {
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        .panel .p {
+            padding: 30px;
+        }
+
+        /*   Navigation Styles*/
+
+
+        .navbar-toggler {
+            padding: 4px 6px;
+            font-size: 16px;
+            color: #fff;
+            position: relative;
+            margin-top: 5px;
+            margin-right: 15px;
+            margin-bottom: 5px;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid goldenrod;
+            border-radius: 4px;
+        }
+
+        .navbar-toggler-icon {
+            background: #ffa400;
+            border-color: transparent;
+        }
+
+
+        #services {
+            background-color: rgba(250, 235, 215, 0.45);
+        }
+
+        #services.heading {
+            color: black;
+        }
+
+        #services .img1 {
+            margin-top: -120px;
+            width: 75%;
+            margin-left: 80px;
+        }
+
+
+
+        #packages.heading {
+            color: black;
+        }
+
+        .gallery .animation {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        #heading h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            color: #333;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        #heading span {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .heading-content {
+            margin-top: 60px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        #product-heading {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+
+        .hover-iner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hover-iner a {
+            position: absolute;
+            top: 35%;
+            left: 43%;
+            margin-left: -18px;
+            margin-top: -18px;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hover-iner img {
+            width: auto;
+            margin-top: 90px;
+        }
+
+        .hover-iner span {
+            position: absolute;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 120px;
+            text-align: center;
+            font-size: 13px;
+            width: 100%;
+            color: rgb(255, 203, 13);
+            font-weight: 300;
+        }
+
+        .hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+
+
+        .p1 {
+            line-height: 28px;
+            font-weight: 300;
+            text-align: center;
+            padding: 3px;
+            color: rgba(5, 2, 43, 0.71);
+        }
+
+
+        #videos .overlay {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            opacity: 2;
+            background-color: rgb(53 18 18 / 44%);
+        }
+
+        .txt {
+            color: rgb(248 249 250);
+            font-weight: 400;
+        }
+
+        .contact-p {
+            background-color: rgba(7, 60, 72, 0.59);
+        }
+
+        /*  Detail section style */
+
+        .deta {
+            font-weight: 600;
+            color: rgba(7, 60, 72, 0.59);
+        }
+
+        /*Brands Styles   */
+
+        #brands {
+            background-color: rgb(4 59 64);
+        }
+
+        #brands .text-center {
+            text-align: center !important;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .ig {
+            height: 28px;
+            width: 28px;
+            vertical-align: middle;
+            padding: 4px;
+            visibility: visible;
+            animation-delay: 1.6s;
+            animation-name: fadeIn;
+        }
+
+        .ig a:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="backG">
+
+
+
+
+    <!--   Navigation Section-->
+    <section id="header" class="row fixed-top justify-content-md-end m-0">
+        <div class="col-md-12 row hotline">
+            <div class="col-md-2 offset-md-8">
+                <i class="fa fa-envelope"></i> info@kedalla.lk
+            </div>
+            <div class="col-md-2">
+                <i class="fa fa-phone"></i> 011 776433688
+            </div>
+
+        </div>
+
+        <div class="col-md-12 p-0">
+            <nav class="navbar navbar-expand-md p-0 custom-navbar" role="navigation">
+                <a class="navbar-brand" href="#"><img class="small-logo1" src="img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" data="#slider" href="#">HOME<span
+                                    class="sr-only smoothScroll">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data="#about" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data="#services" href="#">OUR SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data="#packages" href="#">OUR PACKAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data="#works" href="#">OUR WORKS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
+    <!--  Corousel Slider-->
+
+
+
+    <!--    Service Section-->
+    <div id="slider">
+        <div id="corousel" class="row m-0">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slider/13860.jpg?v=1" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-flex flex-column align-item-center justify-content-center">
+                            <h1>Modern House Makers in Sri Lanka</h1>
+                            <hr>
+                            <p>we always use modern housing plans.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider/23860.jpg?v=1" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-flex flex-column align-item-center justify-content-center">
+                            <h1>Guaranteed Qualified Engineers </h1>
+                            <hr>
+                            <p>We have qualified Engineers with new technology.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider/33860.jpg?v=1" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-flex flex-column align-item-center justify-content-center">
+                            <h1>Quick and Best After Service</h1>
+                            <hr>
+                            <p>We always ready for good after services.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="wamana">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-4 offset-md-1 ">
+                    <img src="img/wamana.gif" alt="">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <h3>වාස්තු විද්‍යානුකූලව නිවාස ඉදිකිරීම</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class=" p-section col-md-12 p-0">
+        <div class="row text center m-0">
+            <div class="section-title col-md-8 offset-md-2">
+                <h1 class="heading">ABOUT US</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-justify">
+                    Kedella Homes and constructions is a well trusted house design and construction company in Sri
+                    Lanka. We have being serving our customers since 2000. During this 20 years period the company
+                    involved thousands of planning, designing & estimation of households and commercial buildings. Many
+                    of them were constructed on ground with our team. Now we have extended the facilities to the
+                    customers to view there houses through 3D model including interior design before the construction.
+                </div>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <div class="card text-center">
+                    <h5 class="card-header">VISION</h5>
+                    <hr>
+                    <div class="card-body">
+                        <p class="card-text">To be a trustworthy company who bring any dreaming house a reality.</p>
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <h5 class="card-header">MISSION</h5>
+                    <hr>
+                    <div class="card-body">
+                        <p class="card-text">The satisfaction of the customer, giving them a good quality and economical
+                            product to them exceeds their expectation with our professional service.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <section id="services" class=" p-section col-md-12 p-0">
+        <div class="row text-center m-0">
+            <div class="section-title col-md-8 offset-md-2">
+                <h1 class="heading">SERVICES</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-md-6 p-0">
+                <img src="img/services/1.jpg" class="rounded w-100" alt="...">
+            </div>
+            <div class="col-md-6 p-4 des bg-1">
+                <h4>Constructions of any kind of building in the entire Island</h4>
+                <hr>
+                <p align="justify">With attention to detail, experience and a high level of craftsmanship, there is no
+                    hospitality project too big or too small for SK Homes construction,s commercial team.</p>
+                <p align="justify">We understand Hotels & Villas Constructions projects must leave a lasting impression
+                    and work closely with clients to ensure their dream becomes reality.</p>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-md-6 order-md-6 p-0">
+                <img src="img/services/2.jpg" class="rounded w-100 p-0" alt="...">
+            </div>
+            <div class="col-md-6 p-4 des bg-2">
+                <h4>Professional consultation of renovation and construction of building including architectural
+                    drawings, structural designs and construction planning.</h4>
+                <hr class="mb-1">
+                <p align="justify">Custom Architectural Designs for each client. The client is given the ability to have
+                    their dream home designed exactly like they want. All aspects of the designs are based on the
+                    clients wants and need.</p>
+                <p align="justify" class="mb-0">If you are looking to build your dream home, complete that renovation
+                    project or add that new addition, let us manage your project. We offer several packages that start
+                    with the design and continue through the construction phase.</p>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-md-6 p-0">
+                <img src="img/services/3.jpg" class="rounded w-100 p-0" alt="...">
+            </div>
+            <div class="col-md-6 p-4 des bg-3">
+                <h4>3D model designing of the building including interior arrangements prior to construction.</h4>
+                <hr>
+                <p align="justify">Before make your house, we give 3d Model Designing Of The Building Including Interior
+                    Arrangements Prior To Construction
+                </p>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-md-6 order-md-6 4 p-0">
+                <img src="img/services/5.jpg" class="rounded w-100 p-0" alt="...">
+            </div>
+            <div class="col-md-6 des p-4 bg-4">
+                <h4>Supporting for obtaining required local approvals for construction</h4>
+                <hr class="mb-1">
+                <p align="justify">Transfer of assessment names to one's own name through a summary of deeds after
+                    purchasing a land and obtaining an assessment number.</p>
+                <ul>
+                    <li>Approving the dimensional plan</li>
+                    <li>Approval of building application</li>
+                    <li>Obtaining a Certificate of Residence</li>
+                </ul>
+                <p align="justify" class="mb-0">If your house or building is constructed without obtaining the relevant
+                    approval from the local authorities in the above manner, the relevant authorities have the power to
+                    demolish it within 24 hours after obtaining a court order as an unauthorized construction.</p>
+
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-md-6 4 p-0">
+                <img src="img/services/6.jpg" class="rounded w-100 p-0" alt="...">
+            </div>
+            <div class="col-md-6 des p-4 bg-5">
+                <h4>Providing required documents to obtain bank loans.</h4>
+                <hr>
+                <p align="justify">We support you to provide required documents to obtain bank loans
+                </p>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-md-6 order-md-6 4 p-0">
+                <img src="img/services/7.jpg" class="rounded w-100 p-0" alt="...">
+            </div>
+            <div class="col-md-6 des p-4 bg-6">
+                <h4>Providing of lands with the customer requirements</h4>
+                <hr>
+                <p align="justify">We support you to get land wherever you wish in the island according to your
+                    requirements
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="packages" class=" p-section col-md-12 p-0">
+        <div class="row text center m-0">
+            <div class="section-title col-md-8 offset-md-2">
+                <h1 class="heading">OUR PACKAGES</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row m-0">
+
+                <div class="col-md-4 p-2 mb-2 pics animation all 1-floor">
+                    <img class="img-fluid" src="img/packeges/1st/1.jpg" alt="Card image cap">
+
+                    <div class="no">1</div>
+                    <div class="des">
+                        <div class=""><i class="fas fa-bed"></i>2</div>
+                        <div class=""><i class="fas fa-bath"></i>1</div>
+                    </div>
+                    <div class="price">31 Lakhs</div>
+                </div>
+                <div class="col-md-4 p-2 mb-2 pics animation all 1-floor">
+                    <img class="img-fluid" src="img/packeges/1st/2.jpg" alt="Card image cap">
+
+                    <div class="no">2</div>
+                    <div class="des">
+                        <div class=""><i class="fas fa-bed"></i>4</div>
+                        <div class=""><i class="fas fa-bath"></i>1</div>
+                    </div>
+                    <div class="price">52 Lakhs</div>
+                </div>
+                <div class="col-md-4 p-2 mb-2 pics animation all 1-floor">
+                    <img class="img-fluid" src="img/packeges/1st/3.jpg" alt="Card image cap">
+
+                    <div class="no">3</div>
+                    <div class="des">
+                        <div class=""><i class="fas fa-bed"></i>3</div>
+                        <div class=""><i class="fas fa-bath"></i>1</div>
+                    </div>
+                    <div class="price">40 Lakhs</div>
+                </div>
+                <div class="col-md-4 p-2 mb-2 pics animation all 1-floor">
+                    <img class="img-fluid" src="img/packeges/1st/4.jpg" alt="Card image cap">
+
+                    <div class="no">4</div>
+                    <div class="des">
+                        <div class=""><i class="fas fa-bed"></i>5</div>
+                        <div class=""><i class="fas fa-bath"></i>1</div>
+                    </div>
+                    <div class="price">60 Lakhs</div>
+                </div>
+                <div class="col-md-4 p-2 mb-2 pics animation all 1-floor">
+                    <img class="img-fluid" src="img/packeges/1st/5.jpg" alt="Card image cap">
+
+                    <div class="no">5</div>
+                    <div class="des">
+                        <div class=""><i class="fas fa-bed"></i>5</div>
+                        <div class=""><i class="fas fa-bath"></i>1</div>
+                    </div>
+                    <div class="price">58 Lakhs</div>
+                </div>
+                <div class="col-md-4 p-2 mb-2 pics animation all 1-floor">
+                    <img class="img-fluid" src="img/packeges/1st/6.jpg" alt="Card image cap">
+
+                    <div class="no">6</div>
+                    <div class="des">
+                        <div class=""><i class="fas fa-bed"></i>3</div>
+                        <div class=""><i class="fas fa-bath"></i>1</div>
+                    </div>
+                    <div class="price">35 Lakhs</div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-3 p-5 text-center">
+
+                <a href="index3e35.html?tag=packages" class="btn btn-more">Show More</a>
+            </div>
+        </div>
+    </section>
+    <div id="whychoose-section">
+        <div class="container">
+            <div class="row text center m-0">
+                <div class="section-title col-md-8 offset-md-2">
+                    <h1 class="heading">How to get started</h1>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row row-margin-bottom">
+                <div class="col-md-12">
+                    <center></center>
+                </div>
+                <div class="col-md-12 tag-container">
+                    <ul class="tag">
+                        <li class="left">
+                            <div class="col-md-12 buble">
+                                <div class="c1">1</div>
+                            </div>
+                            <div class="col-md-12 content c1">
+                                <div class="col-md-12 head">Experienced doctors in every specialty</div>
+                                <div class="col-md-12 body">Simple, you can make a call, email, message through Viber
+                                    and Whatsapp
+                                    <ul>
+                                        <li>Ring/Text: 0718145772 (24 hours)</li>
+                                        <li>Email: rasika.kedalla@gmail.com</li>
+                                        <li>WhatsApp: 0718145772 (24 hours)</li>
+                                        <li>Viber: 0718145772 (24 hours)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="right">
+                            <div class="col-md-12 buble">
+                                <div class="c2">2</div>
+                            </div>
+                            <div class="col-md-12 content c2">
+                                <div class="col-md-12 head">We take the time you need. </div>
+                                <div class="col-md-12 body">With the pre discussion you can inquire all the essential
+                                    details. We will visit the site on your request.</div>
+                            </div>
+                        </li>
+                        <li class="left">
+                            <div class="col-md-12 buble">
+                                <div class="c3">3</div>
+                            </div>
+                            <div class="col-md-12 content c3">
+                                <div class="col-md-12 head">Satisfied patients and an unparalleled experience. </div>
+                                <div class="col-md-12 body">If you satisfy, start the process. We will charge nominal
+                                    fee (Rs. 10,000.00) to start the work. </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="videos">
+
+        <div class="container py-5">
+            <div class="overlay"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="embed-responsive embed-responsive-21by9 vdo">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ML9aaWZat5E"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="embed-responsive embed-responsive-21by9 vdo">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9tEDwM1pHoY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="embed-responsive embed-responsive-21by9 vdo">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XvtLzTXiyV4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="works">
+
+        <div class="row m-0">
+            <div class="section-title col-md-8 offset-md-2">
+                <h1 class="heading">OUR WORKS</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/complete/1.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img
+                            src="img/works/complete/1.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/complete/2.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img
+                            src="img/works/complete/2.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/complete/3.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img
+                            src="img/works/complete/3.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/complete/4.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img
+                            src="img/works/complete/4.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/complete/5.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img
+                            src="img/works/complete/5.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/complete/6.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img
+                            src="img/works/complete/6.jpg"></a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="ongoing">
+
+        <div class="row m-0">
+            <div class="section-title col-md-8 offset-md-2">
+                <h1 class="heading">ON GOING PROJECTS</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/ongoing/1.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img src="img/works/ongoing/1.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/ongoing/2.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img src="img/works/ongoing/2.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/ongoing/3.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img src="img/works/ongoing/3.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/ongoing/4.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img src="img/works/ongoing/4.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/ongoing/5.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img src="img/works/ongoing/5.jpg"></a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="col-md-12 p-0 image-popup-no-margins" href="img/works/ongoing/6.jpg"
+                        data-lightbox="mygallery" data-title="New Yeat Festivel"><img src="img/works/ongoing/6.jpg"></a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--   Detail class -->
+    <section id="details" class=" p-section col-md-12 p-5">
+        <div class="row text-center m-0">
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+
+                <i class="fas fa-map-marker-alt fa-2x "></i>
+
+                <p class="font-weight-bold my-3">Address</p>
+
+                <p class="deta">No 10 , Baseline Road, Colombo </p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                <i class="fas fa-phone fa-2x "></i>
+
+                <p class="font-weight-bold my-3">Phone number</p>
+
+                <p class="deta">+ 01 234 567 89</p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                <i class="fas fa-envelope fa-2x"></i>
+
+                <p class="font-weight-bold my-3">E-mail</p>
+
+                <p class="deta">info@gmail.com</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Brands Section-->
+    <section id="brands" class=" p-section col-md-12  col-sm-12 p-0">
+        <div class="row text-center m-0">
+            <div class="col-2 col-md-2">
+                <a href="#"><img class="ig" src="Social/pinterest.svg"></a>
+            </div>
+            <div class="col-2 col-md-2">
+                <a href="#"><img class="ig" src="Social/facebook.svg"></a>
+            </div>
+            <div class="col-2 col-md-2">
+                <a href="#"><img class="ig" src="Social/youtube.svg"></a>
+            </div>
+            <div class="col-2 col-md-2">
+                <a href="#"><img class="ig" src="Social/skype.svg"></a>
+            </div>
+            <div class="col-2 col-md-2">
+                <a href="#"><img class="ig" src="Social/whatsapp.svg"></a>
+            </div>
+            <div class="col-2 col-md-2">
+                <a href="#"><img class="ig" src="Social/pinterest.svg"></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="jq/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="Magnific-Popup-master/dist/jquery.magnific-popup.min.js" defer></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.image-popup-no-margins').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300 // don't foget to change the duration also in CSS
+                }
+            });
+
+
+            $(".navbar ul li a").click(function () {
+
+                var ss = $(this);
+                $('html, body').animate({
+                    scrollTop: $(ss.attr('data')).offset().top
+                }, 1000);
+            });
+
+        });
+    </script>
+</body>
+
+
+</html>
